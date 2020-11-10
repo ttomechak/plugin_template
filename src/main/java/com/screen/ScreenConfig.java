@@ -4,16 +4,14 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
+@ConfigGroup("com.screen")
 public interface ScreenConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "showScreen",
+		name = "Show Screen",
+		description = "Puts a screen over the game"
 	)
-	default String greeting()
-	{
-		return "Hello";
-	}
+
+	default boolean booleanConfig() { return false; }
 }
