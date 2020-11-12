@@ -10,7 +10,7 @@ public interface ScreenConfig extends Config
 	@ConfigItem(
 		keyName = "showScreen",
 		name = "Show Screen",
-		description = "Puts a screen over the game"
+		description = "Puts a dark haze over the game"
 	)
 
 	default boolean booleanConfig() { return false; }
